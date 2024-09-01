@@ -961,11 +961,11 @@ class compression:
 
                                                         elif (
                                                             C9 == 1
-                                                            and (long_L - 2 - En) >= 0
+                                                            and (long_L -(En-2)) >= 0
                                                         ):
 
                                                             TUPLE = TUPLE[
-                                                                : long_L - 2 - En
+                                                                : long_L - (En-2)
                                                             ]
 
                                                             TUPLE += ZEROS_ONE_1
@@ -1499,9 +1499,9 @@ class compression:
 
                                             TUPLE += ZEROS_ONE_1
 
-                                        elif C9 == 1 and (long_L - 2 - En) >= 0:
+                                        elif C9 == 1 and (long_L -(En-2))>= 0:
 
-                                            TUPLE = TUPLE[: long_L - 2 - En]
+                                            TUPLE = TUPLE[: long_L -  (En-2)]
 
                                             TUPLE += ZEROS_ONE_1
 
